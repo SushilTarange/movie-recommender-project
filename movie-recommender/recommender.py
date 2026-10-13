@@ -1,7 +1,7 @@
+from pathlib import Path
 import pandas as pd
 
-DATA_FILE = "movies.csv"
-
+DATA_FILE = Path(__file__).resolve().parent / "movies.csv"
 def load_movies():
     """Load movie records from the local CSV dataset."""
     return pd.read_csv(DATA_FILE)
