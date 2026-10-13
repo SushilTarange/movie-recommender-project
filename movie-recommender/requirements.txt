@@ -1,0 +1,4 @@
+(
+echo streamlit
+echo pandas
+) > requirements.txt
